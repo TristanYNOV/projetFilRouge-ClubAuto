@@ -1,0 +1,34 @@
+:root{
+    --yellow: #FAB637;
+    --red:#FF4848;
+    --orange:#CC6119;
+    --gray: #ECEFF3;
+    --dark:#232628;
+    --blue:#6C98E1 ;
+
+}
+
+
+.text-yellow{
+   color: var(--yellow);
+}
+
+.text-red{
+    color: var(--red);
+ }
+
+ .text-orange{
+    color: var(--orange);
+ }
+
+ .text-gray{
+    color: var(--gray);
+ }
+
+ .text-dark{
+    color: var(--dark);
+ }
+
+ .text-blue{
+    color: var(--blue);
+ }
