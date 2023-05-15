@@ -2,9 +2,11 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Accueil - Club Auto</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"  href="css/fuckingCOLOR.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,27 +16,46 @@
     <script src="/js/bootstrap.bundle.min.js"></script>
     <style>body {background-image: url('images/vehicule1.jpg');}</style>
 </head>
-<body>
-    <header>
-        <div class="text-bg-dark p-3 d-flex p-2 text-center">
-            <p>
-                Club Auto
-            </p>
-            <p>
-                <img>
-                Adresse: 
-            </p>
-            <P>
-                <img>
-                Téléphone:
-            </P>
+<header>
+    <div class="navbar text-center bg-black d-flex flex-column flex-sm-row justify-content-sm-around align-items-center
+    ">
+        <div class="text-white d-sm-none">
+            Hamburger Menu
         </div>
-        <div role="navigation" class="navbar navbar-brand navbar-text navbar-toggler bg-body-emphasis opacity-75">
-            <a href="accueil.html">Accueil</a>
-            <a href="vente.html">Vente</a>
-            <a href="location.html">Location</a>
-            <a href="contact.html">Contact</a>
+
+        <div class = "navbar-text text-white d-none d-sm-block">
+            CLUB AUTO
         </div>
-    </header>
+
+        <div class = "navbar-text text-orange d-none d-sm-block">
+            Adresse
+        </div>
+
+        <div class="navbar-text text-orange">
+            Telephone
+        </div>
+
+        <div class = "navbar-text text-orange d-none d-sm-block">
+            Ouverture
+        </div>
+
+        <div class = "navbar-text text-white d-none d-sm-block">
+            Réseaux
+        </div>
+
+        <div class="navbar-text text-white d-sm-none">
+            Slogan <p class="text-orange"> Le meilleur du club auto</p>
+        </div>
+    </div>
+    <div role="navigation" class="navbar navbar-text navbar-expand-md  bg-light opacity-75 container-fluid justify-content-end d-none d-md-block">
+        <ul class="h3 container-fluid navbar-nav justify-content-end">
+            <li class="nav-item justify-content-end"><a href="accueil.html" class="text-decoration-none nav-link ">Accueil</a></li>
+            <li class="nav-item justify-content-end"><a href="vente.html" class="text-decoration-none nav-link">Vente</a></li>
+            <li class="nav-item justify-content-end"><a href="location.html" class="text-decoration-none nav-link">Location</a></li>
+            <li class="nav-item justify-content-end"><a href="contact.html" class="text-decoration-none nav-link">Contact</a></li>
+        </ul>
+        
+    </div>
+</header>
 </body>
 </html>

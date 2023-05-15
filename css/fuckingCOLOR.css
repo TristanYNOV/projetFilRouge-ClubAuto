@@ -32,3 +32,7 @@
  .text-blue{
     color: var(--blue);
  }
+
+ .active{
+   background-color: #CC6119;
+ }
