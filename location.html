@@ -1,40 +1,149 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-	<meta charset="UTF-8">
-    <title>Accueil - Club Auto</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Location - Club Auto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fuckingCOLOR.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <style>body {background-image: url('images/vehicule1.jpg');}</style>
+
 </head>
+
 <body>
-    <header>
-        <div class="text-bg-dark p-3 d-flex p-2 text-center">
-            <p>
-                Club Auto
-            </p>
-            <p>
-                <img>
-                Adresse: 
-            </p>
-            <P>
-                <img>
-                Téléphone:
-            </P>
+    <div id="headerMain">
+        <header class="navbar navbar-expand-sm text-center bg-black d-flex flex-column flex-sm-row justify-content-sm-around align-items-center p-3">
+            <div class="navbar text-white d-sm-none">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                    <span class="navbar-toggler-icon bg-light"></span>
+                </button>
+                
+            </div>
+
+            <div class="text-white d-none d-sm-block">
+                CLUB AUTO
+            </div>
+
+            <div class="text-orange d-none d-sm-block">
+                Adresse
+            </div>
+
+            <div class="text-orange">
+                Telephone
+            </div>
+
+            <div class="text-orange d-none d-sm-block">
+                Ouverture
+            </div>
+
+            <div class="text-white d-none d-sm-block">
+                Réseaux
+            </div>
+
+            <div class="text-white d-sm-none">
+                Slogan <p class="text-orange"> Le meilleur du club auto</p>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light" data-bs-theme="blue">
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+                <ul class="navbar-nav ms-autopx-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Vente</a></li>
+                    <li class="nav-item"><a class="nav-link-active" href="#">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <figure class="figure position-absolute-top-0">
+            <img src="images/vente-location.jpg" alt="image illustration location" class="img-fluid w-100">
+        </figure>
         </div>
-        <div role="navigation" class="navbar navbar-brand navbar-text navbar-toggler bg-body-emphasis opacity-75">
-            <a href="accueil.html">Accueil</a>
-            <a href="vente.html">Vente</a>
-            <a href="location.html">Location</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </header>
-</body>
+        <section class= "col-6 container text-center border">
+            <form action="">
+                <div class=" row mb-2 bg-dark ">
+                    <img src="images/icone-voiture.png" alt="" class="col img-fluid">
+                    <h2 class="h3 text-light col">Rechercher</h2>
+                </div>
+                <fieldset>
+                    <div class="mb-1">
+                        <label for="type" class="form-label"></label>
+                        <select name="type" id="type" class="form-select">
+                            <option selected> Type </option>
+                            <option value="BR">BREAK</option>
+                            <option value="SUV">SUV</option>
+                            <option value="BER">BERLINE</option>
+                            <option value="CIT">CITADINE</option>
+                        </select>
+                    </div>
+                    <div class="mb-1">
+                        <label for="carburant" class="form-label"></label>
+                        <select name="carburant" id="carburant" class="form-select">
+                            <option selected> Carburant </option>
+                            <option value="GO">DIESEL</option>
+                            <option value="ES">ESSENCE</option>
+                            <option value="EL">ELECTRIQUE</option>
+                            <option value="HY">HYBRIDE</option>
+                        </select>
+                    </div>
+                    <div class="mb-1">
+                        <label for="marque" class="form-label"></label>
+                        <select name="marque" id="marque" class="form-select">
+                            <option selected> Marque </option>
+                            <option value="AU">AUDI</option>
+                            <option value=">BM">BMW</option>
+                            <option value="PE">PEUGEOT</option>
+                            <option value="SE">SEAT</option>
+                        </select>
+                    </div>
+                    <div class="mb-1">
+                        <label for="modele" class="form-label"></label>
+                        <select name="modele" id="modele" class="form-select">
+                            <option selected> Modèle </option>
+                            <option value="A">A6</option>
+                            <option value="B">SERIE 3</option>
+                            <option value="C">308</option>
+                            <option value="HY">IBIZA</option>
+                        </select>
+                    </div>
+                    <div class="mb-1">
+                        <label for="kilometrage" class="form-label"></label>
+                        <select name="kilometrage" id="kilometrage" class="form-select">
+                            <option selected> Kilomètrage Maximal </option>
+                            <option value="A">25 000 KM</option>
+                            <option value="B">50 000 KM</option>
+                            <option value="C">75 000 KM</option>
+                            <option value="D">100 000 KM</option>
+                        </select>
+                    </div>
+                    <div class="mb-1">
+                        <label for="anciennete" class="form-label"></label>
+                        <select name="anciennete" id="anciennete" class="form-select">
+                            <option selected> Ancienneté </option>
+                            <option value="A">2022 </option>
+                            <option value="B">2021</option>
+                            <option value="C">2020 </option>
+                            <option value="D">2019</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+    <footer></footer>
+    </body>
+
+
+
 </html>

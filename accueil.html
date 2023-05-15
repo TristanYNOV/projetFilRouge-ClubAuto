@@ -24,9 +24,12 @@
 
 <body>
     <div id="headerMain">
-        <header class="text-center bg-black d-flex flex-column flex-sm-row justify-content-sm-around align-items-center p-3">
-            <div class="text-white d-sm-none">
-                Hamburger Menu
+        <header class="navbar navbar-expand-sm text-center bg-black d-flex flex-column flex-sm-row justify-content-sm-around align-items-center p-3">
+            <div class="navbar text-white d-sm-none">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                    <span class="navbar-toggler-icon bg-light"></span>
+                </button>
+                
             </div>
 
             <div class="text-white d-none d-sm-block">
@@ -53,13 +56,19 @@
                 Slogan <p class="text-orange"> Le meilleur du club auto</p>
             </div>
         </header>
-        <nav>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eius veritatis pariatur nesciunt voluptatum maiores sequi magni corrupti vero ullam reiciendis labore asperiores saepe, natus laudantium? Nostrum quia ab tempore?
+        <nav class="navbar navbar-expand-sm navbar-light bg-light ">
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+                <ul class="navbar-nav px-3">
+                    <li class="nav-item"><a class="nav-link-active" href="#">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Vente</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </div>
-
-
-
 </body>
+
+
 
 </html>
