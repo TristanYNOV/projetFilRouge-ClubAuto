@@ -22,14 +22,17 @@
     <script src="/js/bootstrap.bundle.min.js"></script>
 
 </head>
+
+  <!-- Début du header -->
 <body>
     <div id="headerMain">
-        <header class="navbar navbar-expand-sm text-center bg-black d-flex flex-column flex-sm-row justify-content-sm-around align-items-center p-3">
+        <header
+            class="navbar navbar-expand-sm text-center bg-black d-flex flex-column flex-sm-row justify-content-sm-around align-items-center p-3">
             <div class="navbar text-white d-sm-none">
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content">
                     <span class="navbar-toggler-icon bg-light"></span>
                 </button>
-                
+
             </div>
 
             <div class="text-white d-none d-sm-block">
@@ -40,8 +43,9 @@
                 Adresse
             </div>
 
-            <div class="text-orange">
-                Telephone
+            <div class="text-orange text-start h2-sm">
+                TELEPHONE :
+                <p class="text-white text-start">01 23 45 67 89</p>
             </div>
 
             <div class="text-orange d-none d-sm-block">
@@ -52,20 +56,32 @@
                 Réseaux
             </div>
 
-            <div class="text-white d-sm-none">
-                Slogan <p class="text-orange"> Le meilleur du club auto</p>
+            <div class="text-white d-sm-none h1">
+                CLUB AUTO <p class="d-inline text-orange">LE MEILLEUR DE L'AUTOMOBILE</p> 
             </div>
         </header>
-      <div role="navigation" class="navbar navbar-text navbar-expand-md  bg-light opacity-75 container-fluid justify-content-end d-none d-md-block">
-        <ul class="h3 container-fluid navbar-nav justify-content-end">
-            <li class="nav-item justify-content-end"><a href="accueil.html" class="text-decoration-none nav-link active text-white ">Accueil</a></li>
-            <li class="nav-item justify-content-end"><a href="vente.html" class="text-decoration-none nav-link">Vente</a></li>
-            <li class="nav-item justify-content-end"><a href="location.html" class="text-decoration-none nav-link">Location</a></li>
-            <li class="nav-item justify-content-end"><a href="contact.html" class="text-decoration-none nav-link">Contact</a></li>
-        </ul>
-      </div>
-      
+        <div role="navigation"
+            class="navbar navbar-text navbar-expand-md  bg-light opacity-75 container-fluid justify-content-end d-none d-md-block">
+            <ul class="h3 container-fluid navbar-nav justify-content-end">
+                <li class="nav-item justify-content-end"><a href="accueil.html"
+                        class="text-decoration-none nav-link active text-white ">Accueil</a></li>
+                <li class="nav-item justify-content-end"><a href="vente.html"
+                        class="text-decoration-none nav-link">Vente</a></li>
+                <li class="nav-item justify-content-end"><a href="location.html"
+                        class="text-decoration-none nav-link">Location</a></li>
+                <li class="nav-item justify-content-end"><a href="contact.html"
+                        class="text-decoration-none nav-link">Contact</a></li>
+            </ul>
+        </div>
     </div>
+
+    <!-- Début de la partie principale de la page d'accueil -->
+<main>
+    <img src="images/clients.jpg" class="img-fluid my-5" alt="Happy is my client, sad is the one who didn't choose us" srcset="">
+    <h1 class="text-black text-nowrap"> BIENVENUE CHEZ <p class="text-orange d-inline">CLUB AUTO</p> </h1>
+    <p class="text-black h2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, temporibus blanditiis cumque ipsa sequi deleniti repudiandae magnam numquam adipisci!</p>
+</main>
+
 </body>
 
 
