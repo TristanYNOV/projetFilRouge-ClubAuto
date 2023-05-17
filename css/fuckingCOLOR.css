@@ -2,7 +2,8 @@
     --yellow: #FAB637;
     --red:#FF4848;
     --orange:#CC6119;
-    --gray: #ECEFF3;
+    --gray: #71767c;
+    --grayLight: #9da2ac;
     --dark:#232628;
     --blue:#6C98E1 ;
 
@@ -25,6 +26,10 @@
     color: var(--gray);
  }
 
+ .text-grayLight{
+   color: var(--grayLight);
+}
+
  .text-dark{
     color: var(--dark);
  }
@@ -36,3 +41,7 @@
  .active{
    background-color: #CC6119;
  }
+
+ hr{
+   border-top: 2px solid black;
+  }
