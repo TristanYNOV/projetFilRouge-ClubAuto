@@ -57,5 +57,30 @@
         
     </div>
 </header>
+<div class="card col-10 shadow p-3 mb-5 bg-white rounded container-fluid border-0 radius-0">
+    <form class="card-body">
+        <p class="h1 card-title flex-sm-row">Contactez nous</p>
+        <div class=" card-text flex-column">
+            <div class="flex-sm-row">
+                <label for="prenom">Prénom*</label>
+            <input type="text" id="prenom" placeholder="Entrez votre prénom">
+            <label for="nom">Nom*</label>
+            <input type="text" id="nom" placeholder="Entrez votre nom">
+            </div>
+            <div class="flex-sm-row">
+                <label for="mail">Email*</label>
+            <input type="email" id="mail" placeholder="Entrez une adresse mail valide">
+            <label for="tel">Telephone</label>
+            <input type="number" id="tel" placeholder="phone number">
+            </div>
+        </div>
+        <div class="card-text flex-column">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Ecrivez votre message" rows="14"></textarea>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </div>
+    </form>
+</div>
+
 </body>
 </html>
