@@ -40,14 +40,12 @@
 
  .active{
    background-color: #CC6119;
- }
+}
 
 /* Personnalisation des */
 .locationCard{
    background-image: url(../images/vente-location.jpg);
    background-repeat: no-repeat;
-   margin: 0;
-   width: 100%
 }
 
  hr{
