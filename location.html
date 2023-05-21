@@ -27,8 +27,8 @@
     <div id="headerMain">
         <header class="navbar navbar-expand-sm text-center bg-black d-flex flex-column flex-sm-row justify-content-sm-around align-items-center p-3">
             <div class="navbar text-white d-sm-none">
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content">
-                    <span class="navbar-toggler-icon bg-light"></span>
+                <button type="button" class="navbar-toggler bg-white " data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 
             </div>
@@ -67,13 +67,14 @@
                 </ul>
             </div>
         </nav>
-        <figure class="figure position-absolute-top-0">
-            <img src="images/vente-location.jpg" alt="image illustration location" class="img-fluid w-100">
+        <figure class="figure">
+            <img src="images/vente-location.jpg" alt="image illustration location" class="img-fluid">
         </figure>
         </div>
+        
         <section class= "col-6 container text-center border">
             <form action="">
-                <div class=" row mb-2 bg-dark ">
+                <div class=" row bg-dark ">
                     <img src="images/icone-voiture.png" alt="" class="col img-fluid">
                     <h2 class="h3 text-light col">Rechercher</h2>
                 </div>
@@ -128,7 +129,7 @@
                             <option value="D">100 000 KM</option>
                         </select>
                     </div>
-                    <div class="mb-1">
+                    <div class="mb-2">
                         <label for="anciennete" class="form-label"></label>
                         <select name="anciennete" id="anciennete" class="form-select">
                             <option selected> Ancienneté </option>
@@ -138,10 +139,58 @@
                             <option value="D">2019</option>
                         </select>
                     </div>
+                    <div class="mb-1">
+                        <label for="customRange2" class="form-label">Prix</label>
+                        <input type="range" class="form-range" min="0" max="80 000" id="customRange2">
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-primary" type="button">Reinitialiser</button>
+                    </div>
                 </fieldset>
             </form>
         </section>
+            <hr>
+        <div class="card col-8 container ">
+            <img src="images/vehicule2.jpg" class="card-img-top img-fluid" alt="image du véhicule">
+            <div class="card-body">
+            <h5 class="card-title">AUDI A4 SPORTLINE</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quaerat itaque debitis vel error provident necessitatibus tr quos officiis.</p>
+              <a href="#" class="h5"> >> En savoir plus << </a>
+            </div>
+        </div>
+        <hr>
+        <div class="card col-8 container ">
+            <img src="images/vehicule2.jpg" class="card-img-top img-fluid" alt="image du véhicule">
+            <div class="card-body">
+            <h5 class="card-title">AUDI A4 SPORTLINE</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quaerat itaque debitis vel error provident necessitatibus tr quos officiis.</p>
+              <a href="#" class="h5"> >> En savoir plus << </a>
+            </div>
+        </div>
+        <hr>
+        <div class="card col-8 container mb-5">
+            <img src="images/vehicule2.jpg" class="card-img-top img-fluid" alt="image du véhicule">
+            <div class="card-body">
+            <h5 class="card-title">AUDI A4 SPORTLINE</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quaerat itaque debitis vel error provident necessitatibus tr quos officiis.</p>
+              <a href="#" class="h5"> >> En savoir plus << </a>
+            </div>
+        </div>
 
-    <footer></footer>
+
+    <footer>
+        <div class="footer bg-dark d-flex flex-column flex-sm-row justify-content-sm-around p-3">
+            <div class="text-light">
+                <h2>CLUB AUTO</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, praesentium?</p>
+            </div>
+            <div class="text-light">
+                <h2>Horaires d'ouverture</h2>
+                <p>Lundi - Samedi : <strong>9h00 - 17h00</strong> <br>
+                    Dimanche et jours fériés : <strong>Fermé</strong>
+                </p>
+            </div>
+        </div>
+    </footer>
     </body>
 </html>
