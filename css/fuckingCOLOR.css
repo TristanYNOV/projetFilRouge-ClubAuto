@@ -42,11 +42,8 @@
    background-color: #CC6119;
 }
 
-/* Personnalisation des */
-.locationCard{
-   background-image: url(../images/vente-location.jpg);
-   background-repeat: no-repeat;
-}
+/* Personnalisation de classes créées*/
+
 
  hr{
    border-top: 2px solid black;
