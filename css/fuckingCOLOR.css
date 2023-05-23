@@ -48,3 +48,31 @@
  hr{
    border-top: 2px solid black;
   }
+
+  .section2{
+   background-image: url(../images/vente-location.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   max-width: 8000px;
+   margin-left: 0;
+   margin-right: 0;
+  }
+
+  .location{
+background-color: var(--yellow);
+opacity: 0.8;
+  }
+
+.buy{
+   background-color: var(--red);
+   opacity: 0.8;
+}
+
+.recentCars{
+background-color: var(--dark);
+}
+
+.rowCar{
+   background-color: var(--gray);
+}
