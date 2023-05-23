@@ -53,3 +53,7 @@
  hr{
    border-top: 2px solid black;
   }
+  .form-bg{
+   background-color: #dddfe4;
+   border-radius: 0%;
+}
