@@ -49,6 +49,12 @@
    border-top: 2px solid black;
   }
 
+  .form-bg{
+   background-color: #dddfe4;
+    border-radius: 0%;
+}
+
+
   .section2{
    background-image: url(../images/vente-location.jpg);
    background-repeat: no-repeat;
