@@ -2,9 +2,11 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
-    <title>Accueil - Club Auto</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact - Club Auto</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"  href="css/fuckingCOLOR.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,30 +16,84 @@
     <script src="/js/bootstrap.bundle.min.js"></script>
     <style>body {background-image: url('images/vehicule1.jpg');}</style>
 </head>
-<body>
-    <header>
-        <div class="text-bg-dark p-3 d-flex p-2 text-center">
-            <p class="h2">
-                Club Auto
-            </p>
-            <p>
-                <img>
-                Adresse: 
-            </p>
-            <P>
-                <img>
-                Téléphone:
-            </P>
+<header>
+    <div class="navbar text-center bg-black d-flex flex-column flex-sm-row justify-content-sm-around align-items-center
+    ">
+        <div class="text-white d-sm-none">
+            Hamburger Menu
         </div>
-        <div role="navigation" class="navbar navbar-text navbar-expand-md navbar-toggler bg-light opacity-75 container-fluid justify-content-end">
-            <ul class="h3 container-fluid navbar-nav justify-content-end">
-                <li class="nav-item justify-content-end"><a href="accueil.html" class="text-decoration-none nav-link">Accueil</a></li>
-                <li class="nav-item justify-content-end"><a href="vente.html" class="text-decoration-none nav-link">Vente</a></li>
-                <li class="nav-item justify-content-end"><a href="location.html" class="text-decoration-none nav-link">Location</a></li>
-                <li class="nav-item justify-content-end"><a href="contact.html" class="text-decoration-none nav-link">Contact</a></li>
-            </ul>
-            
+
+        <div class = "navbar-text text-white d-none d-sm-block">
+            CLUB AUTO
         </div>
-    </header>
+
+        <div class = "navbar-text text-orange d-none d-sm-block">
+            Adresse
+        </div>
+
+        <div class="navbar-text text-orange">
+            Telephone
+        </div>
+
+        <div class = "navbar-text text-orange d-none d-sm-block">
+            Ouverture
+        </div>
+
+        <div class = "navbar-text text-white d-none d-sm-block">
+            Réseaux
+        </div>
+
+        <div class="navbar-text text-white d-sm-none">
+            Slogan <p class="text-orange"> Le meilleur du club auto</p>
+        </div>
+    </div>
+    <div role="navigation" class="navbar navbar-expand-md  bg-light opacity-75 container-fluid justify-content-end d-none d-md-block p-0">
+        <ul class="h3 container-fluid navbar-nav justify-content-end">
+            <li class="nav-item justify-content-end "><a href="accueil.html" class="text-decoration-none nav-link">Accueil</a></li>
+            <li class="nav-item justify-content-end"><a href="vente.html" class="text-decoration-none nav-link">Vente</a></li>
+            <li class="nav-item justify-content-end"><a href="location.html" class="text-decoration-none nav-link">Location</a></li>
+            <li class="nav-item justify-content-end active"><a href="contact.html" class="text-decoration-none nav-link active text-white">Contact</a></li>
+        </ul>
+        
+    </div>
+</header>
+<div class="col-10 bg-white container-fluid mt-5 col-10">
+    <p class="h1 p-5">Contactez nous</p>
+    <form class="p-5 d-md-flex">
+        <div class=>
+            <div class=" mt-5 d-md-flex margin-collapse">
+                <div class="p-2 ">
+                    <label for="prenom" class="form-label">Prénom*</label>
+                    <input type="text" id="prenom" placeholder="Entrez votre prénom" class="form-control form-bg border-0 border-radius-0">
+                </div>
+                <div class="p-2 ">
+                    <label for="nom" class="form-label">Nom*</label>
+                    <input type="text" id="nom" placeholder="Entrez votre nom"class="form-control form-bg border-0" >
+                </div>
+            </div >
+            <div class="mt-5 d-md-flex">
+                <div class="p-2">
+                    <label for="mail" class="form-label">Email*</label>
+                    <input type="email" id="mail" placeholder="Entrez une adresse mail valide" class="form-control form-bg border-0">
+                </div>
+                <div class="p-2">
+                    <label for="tel" class="form-label">Telephone</label>
+                    <input type="number" id="tel" placeholder="phone number" class="form-control form-bg border-0">
+                </div >
+            </div>
+        </div>
+        
+        <div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" placeholder="Ecrivez votre message" rows="8"class="form-control form-bg border-0"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+        </div>
+    </form>
+</div>
+
 </body>
 </html>

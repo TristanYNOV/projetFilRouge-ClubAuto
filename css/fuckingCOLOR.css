@@ -2,7 +2,8 @@
     --yellow: #FAB637;
     --red:#FF4848;
     --orange:#CC6119;
-    --gray: #ECEFF3;
+    --gray: #71767c;
+    --grayLight: #9da2ac;
     --dark:#232628;
     --blue:#6C98E1 ;
 
@@ -25,6 +26,10 @@
     color: var(--gray);
  }
 
+ .text-grayLight{
+   color: var(--grayLight);
+}
+
  .text-dark{
     color: var(--dark);
  }
@@ -32,3 +37,48 @@
  .text-blue{
     color: var(--blue);
  }
+
+ .active{
+   background-color: #CC6119;
+}
+
+/* Personnalisation de classes créées*/
+
+
+ hr{
+   border-top: 2px solid black;
+  }
+
+  .form-bg{
+   background-color: #dddfe4;
+    border-radius: 0%;
+}
+
+
+  .section2{
+   background-image: url(../images/vente-location.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   max-width: 8000px;
+   margin-left: 0;
+   margin-right: 0;
+  }
+
+  .location{
+background-color: var(--yellow);
+opacity: 0.8;
+  }
+
+.buy{
+   background-color: var(--red);
+   opacity: 0.8;
+}
+
+.recentCars{
+background-color: var(--dark);
+}
+
+.rowCar{
+   background-color: var(--gray);
+}
