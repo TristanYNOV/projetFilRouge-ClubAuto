@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Accueil - Club Auto</title>
+    <title>Contact - Club Auto</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet"  href="css/fuckingCOLOR.css">
@@ -47,7 +47,7 @@
             Slogan <p class="text-orange"> Le meilleur du club auto</p>
         </div>
     </div>
-    <div role="navigation" class="navbar navbar-text navbar-expand-md  bg-light opacity-75 container-fluid justify-content-end d-none d-md-block">
+    <div role="navigation" class="navbar navbar-expand-md  bg-light opacity-75 container-fluid justify-content-end d-none d-md-block p-0">
         <ul class="h3 container-fluid navbar-nav justify-content-end">
             <li class="nav-item justify-content-end "><a href="accueil.html" class="text-decoration-none nav-link">Accueil</a></li>
             <li class="nav-item justify-content-end"><a href="vente.html" class="text-decoration-none nav-link">Vente</a></li>
@@ -57,27 +57,40 @@
         
     </div>
 </header>
-<div class="card col-10 shadow p-3 mb-5 bg-white rounded container-fluid border-0 radius-0">
-    <form class="card-body">
-        <p class="h1 card-title flex-sm-row">Contactez nous</p>
-        <div class=" card-text flex-column">
-            <div class="flex-sm-row">
-                <label for="prenom">Prénom*</label>
-            <input type="text" id="prenom" placeholder="Entrez votre prénom">
-            <label for="nom">Nom*</label>
-            <input type="text" id="nom" placeholder="Entrez votre nom">
-            </div>
-            <div class="flex-sm-row">
-                <label for="mail">Email*</label>
-            <input type="email" id="mail" placeholder="Entrez une adresse mail valide">
-            <label for="tel">Telephone</label>
-            <input type="number" id="tel" placeholder="phone number">
+<div class="col-10 bg-white container-fluid mt-5 col-10">
+    <p class="h1 p-5">Contactez nous</p>
+    <form class="p-5 d-md-flex">
+        <div class=>
+            <div class=" mt-5 d-md-flex margin-collapse">
+                <div class="p-2 ">
+                    <label for="prenom" class="form-label">Prénom*</label>
+                    <input type="text" id="prenom" placeholder="Entrez votre prénom" class="form-control form-bg border-0 border-radius-0">
+                </div>
+                <div class="p-2 ">
+                    <label for="nom" class="form-label">Nom*</label>
+                    <input type="text" id="nom" placeholder="Entrez votre nom"class="form-control form-bg border-0" >
+                </div>
+            </div >
+            <div class="mt-5 d-md-flex">
+                <div class="p-2">
+                    <label for="mail" class="form-label">Email*</label>
+                    <input type="email" id="mail" placeholder="Entrez une adresse mail valide" class="form-control form-bg border-0">
+                </div>
+                <div class="p-2">
+                    <label for="tel" class="form-label">Telephone</label>
+                    <input type="number" id="tel" placeholder="phone number" class="form-control form-bg border-0">
+                </div >
             </div>
         </div>
-        <div class="card-text flex-column">
-            <label for="message">Message</label>
-            <textarea id="message" placeholder="Ecrivez votre message" rows="14"></textarea>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
+        
+        <div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" placeholder="Ecrivez votre message" rows="8"class="form-control form-bg border-0"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
         </div>
     </form>
 </div>
