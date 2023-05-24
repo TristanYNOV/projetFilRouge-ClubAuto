@@ -28,12 +28,14 @@
         <header class="navbar navbar-expand-sm text-center bg-black d-flex flex-column flex-sm-row justify-content-sm-around align-items-center p-3">
             <div class="navbar text-white d-sm-none">
                 <button type="button" class="navbar-toggler bg-white " data-bs-toggle="collapse" data-bs-target="#navbar-content">
-                    <span class="navbar-toggler-icon"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="primary" class="bi bi-list " viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
                 </button>
                 
             </div>
 
-            <div class="text-white d-none d-sm-block">
+            <div class="text-white d-sm-block">
                 CLUB AUTO
             </div>
 
@@ -53,10 +55,8 @@
                 Réseaux
             </div>
 
-            <div class="text-white d-sm-none">
-                Slogan <p class="text-orange"> Le meilleur du club auto</p>
-            </div>
         </header>
+
         <div role="navigation" class="navbar navbar-expand-md  bg-light opacity-75 container-fluid justify-content-end d-none d-md-block p-0">
             <ul class="h3 container-fluid navbar-nav justify-content-end">
                 <li class="nav-item justify-content-end"><a href="accueil.html" class="text-decoration-none nav-link">Accueil</a></li>
@@ -65,18 +65,21 @@
                 <li class="nav-item justify-content-end"><a href="contact.html" class="text-decoration-none nav-link">Contact</a></li>
             </ul>
           </div>
+
         <figure class="figure">
-            <img src="images/vente-location.jpg" alt="image illustration location" class="img-fluid">
+            <img src="images/vente-location.jpg" alt="image illustration location" class="img-fluid vw-100">
         </figure>
         </div>
-        
-        <section class= "col-6 container text-center border">
-            <form action="">
-                <div class=" row bg-dark ">
-                    <img src="images/icone-voiture.png" alt="" class="col img-fluid">
+        <!-- Début de la section rechercher qui vient dessus en sm et à droite sur les écrans supérieur  -->
+        <div class="container align-items-center ">
+            <div class="row justify-content-md-center">
+                
+                <section class="col-8 col-md-5 mx-auto mb-3"><form action="">
+                    <div class=" row bg-dark ">
+                    <img src="images/icone-voiture.png" alt="" class="col col-4 img-fluid">
                     <h2 class="h3 text-light col">Rechercher</h2>
                 </div>
-                <fieldset>
+                <fieldset class="border p-4">
                     <div class="mb-1">
                         <label for="type" class="form-label"></label>
                         <select name="type" id="type" class="form-select">
@@ -127,7 +130,7 @@
                             <option value="D">100 000 KM</option>
                         </select>
                     </div>
-                    <div class="mb-2">
+                    <div class="mb-3">
                         <label for="anciennete" class="form-label"></label>
                         <select name="anciennete" id="anciennete" class="form-select">
                             <option selected> Ancienneté </option>
@@ -138,55 +141,85 @@
                         </select>
                     </div>
                     <div class="mb-1">
-                        <label for="customRange2" class="form-label">Prix</label>
-                        <input type="range" class="form-range" min="0" max="80 000" id="customRange2">
-                    </div>
+                        <form class="multi-range-field my-5 pb-5">
+                            <input id="multi22" class="multi-range" type="range" />
+                          
+                            <label for="ex3">Prix Minimum</label>
+                            <input type="text" id="ex3" class="form-control mb-2">
+                            <label for="ex4">Prix Maximum</label>
+                            <input type="text" id="ex4" class="form-control mb-3"></form>
+                          
+                          
                     <div class="mb-3">
                         <button class="btn btn-primary" type="button">Reinitialiser</button>
                     </div>
                 </fieldset>
             </form>
         </section>
+    
+    
+    <hr class="d-sm-none">
+    
+            <section class="col-8 col-sm-7 mx-auto">
+                <div class="row mb-3">
+                    <div class="card border border-0">
+                    <img src="images/vehicule2.jpg" class="card-img-top " alt="image du véhicule"><span class=" badge bg-primary text-white px-3"><h4>20€ / jour</h4></span>
+                    <div class="card-body">
+                    <h5 class="card-title">AUDI A4 SPORTLINE</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quaerat itaque debitis vel error provident necessitatibus tr quos officiis.</p>
+                      <a href="#" class="h5"> >> En savoir plus << </a>
+                    </div>
+                </div>
+            </div>
+            <hr> 
+            <div class="row mb-3">
+                <div class="card border border-0">
+                <img src="images/vehicule2.jpg" class="card-img-top " alt="image du véhicule"><span class=" badge bg-primary text-white px-3"><h4>20€ / jour</h4></span>
+                <div class="card-body">
+                <h5 class="card-title">AUDI A4 SPORTLINE</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quaerat itaque debitis vel error provident necessitatibus tr quos officiis.</p>
+                  <a href="#" class="h5"> >> En savoir plus << </a>
+                </div>
+            </div>
+        </div>
             <hr>
-        <div class="card col-8 container ">
-            <img src="images/vehicule2.jpg" class="card-img-top img-fluid" alt="image du véhicule">
-            <div class="card-body">
-            <h5 class="card-title">AUDI A4 SPORTLINE</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quaerat itaque debitis vel error provident necessitatibus tr quos officiis.</p>
-              <a href="#" class="h5"> >> En savoir plus << </a>
+            <div class="row mb-3">
+                <div class="card border border-0">
+                <img src="images/vehicule2.jpg" class="card-img-top " alt="image du véhicule"><span class="badge bg-primary text-white px-3"><h4>20€ / jour</h4></span>
+                <div class="card-body">
+                <h5 class="card-title">AUDI A4 SPORTLINE</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quaerat itaque debitis vel error provident necessitatibus tr quos officiis.</p>
+                  <a href="#" class="h5"> >> En savoir plus << </a>
+                </div>
             </div>
         </div>
-        <hr>
-        <div class="card col-8 container ">
-            <img src="images/vehicule2.jpg" class="card-img-top img-fluid" alt="image du véhicule">
-            <div class="card-body">
-            <h5 class="card-title">AUDI A4 SPORTLINE</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quaerat itaque debitis vel error provident necessitatibus tr quos officiis.</p>
-              <a href="#" class="h5"> >> En savoir plus << </a>
+            <hr class="mb-5">
+            
+        </section>
             </div>
-        </div>
-        <hr>
-        <div class="card col-8 container mb-5">
-            <img src="images/vehicule2.jpg" class="card-img-top img-fluid" alt="image du véhicule">
-            <div class="card-body">
-            <h5 class="card-title">AUDI A4 SPORTLINE</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quaerat itaque debitis vel error provident necessitatibus tr quos officiis.</p>
-              <a href="#" class="h5"> >> En savoir plus << </a>
-            </div>
-        </div>
+        </div>  
+        <!-- Fin de la section résultats qui vient dessous en sm et à gauche sur les écrans supérieur  -->
 
 
     <footer>
         <div class="footer bg-dark d-flex flex-column flex-sm-row justify-content-sm-around p-3">
-            <div class="text-light">
-                <h2>CLUB AUTO</h2>
+            <div class="text-light ">
+                <h3 class="text-uppercase">club auto</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, praesentium?</p>
             </div>
             <div class="text-light">
-                <h2>Horaires d'ouverture</h2>
+                <h3 class="text-uppercase">Horaires d'ouverture</h3>
                 <p>Lundi - Samedi : <strong>9h00 - 17h00</strong> <br>
                     Dimanche et jours fériés : <strong>Fermé</strong>
                 </p>
+            </div>
+            <div class="text-light d-flex row">
+                <h3 class="col text-uppercase">Newsletter</h3>
+                <label for="email" class="form-label"></label>
+                <input type="email" class="form-control" id="email" placeholder="Entrez votre email" name="email" class="">
+                  </div>
+              
+
             </div>
         </div>
     </footer>
