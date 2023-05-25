@@ -9,7 +9,7 @@
 
 }
 
-
+/* Classe couleur pour le texte */
 .text-yellow{
    color: var(--yellow);
 }
@@ -38,10 +38,29 @@
     color: var(--blue);
  }
 
+ /* Classe couleur pour le background */
+.bg-blue{
+   background-color: var(--blue);
+}
+
+.bg-dark{
+   background-color: var(--dark);
+}
+.bg-gray{
+   background-color: var(--gray);
+}
+.bg-grayLight{
+   background-color: var(--grayLight);
+}
+
  .active{
    background-color: #CC6119;
 }
 
+/* Classes pour la width */
+.fit-content{
+   width: fit-content;
+}
 /* Personnalisation de classes créées*/
 
 
@@ -65,20 +84,25 @@
    margin-right: 0;
   }
 
+  .section4{
+   background-image: url(../images/vehicule3.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   max-width: 8000px;
+   margin-left: 0;
+   margin-right: 0;
+  }
+
   .location{
 background-color: var(--yellow);
-opacity: 0.8;
+opacity: 0.9;
   }
 
 .buy{
    background-color: var(--red);
-   opacity: 0.8;
+   opacity: 0.9;
 }
 
-.recentCars{
-background-color: var(--dark);
-}
 
-.rowCar{
-   background-color: var(--gray);
-}
+
