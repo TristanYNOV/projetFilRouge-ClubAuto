@@ -6,6 +6,7 @@
     --grayLight: #9da2ac;
     --dark:#232628;
     --blue:#6C98E1 ;
+    --grayDark:#414244;
 
 }
 
@@ -49,9 +50,13 @@
 .bg-gray{
    background-color: var(--gray);
 }
+.bg-grayDark{
+   background-color: var(--grayDark);
+}
 .bg-grayLight{
    background-color: var(--grayLight);
 }
+
 
  .active{
    background-color: #CC6119;
@@ -61,13 +66,29 @@
 .fit-content{
    width: fit-content;
 }
-/* Personnalisation de classes créées*/
 
+/* Classes pour Hr */
 
  hr{
    border-top: 2px solid black;
   }
 
+.hr-orange{
+   border-color: var(--orange);
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   opacity: 1;
+}
+.hr-gray{
+   border-color: var(--grayLight);
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   opacity: 0.2;
+}
+
+/* Personnalisation de classes créées*/
   .form-bg{
    background-color: #dddfe4;
     border-radius: 0%;
