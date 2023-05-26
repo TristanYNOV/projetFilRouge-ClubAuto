@@ -57,20 +57,31 @@
    background-color: var(--grayLight);
 }
 
-
  .active{
    background-color: #CC6119;
 }
+
+.bg-orange{
+   background-color: var(--orange);
+}
+
+
+/* Personnalisation de classes créées*/
 
 /* Classes pour la width */
 .fit-content{
    width: fit-content;
 }
 
+
 /* Classes pour Hr */
 
  hr{
    border-top: 2px solid black;
+  }
+  
+  hr.footer{
+   border-top: 2px solid var(--grayLight);
   }
 
 .hr-orange{
@@ -98,7 +109,7 @@
   .section2{
    background-image: url(../images/vente-location.jpg);
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size:cover;
    width: 100%;
    max-width: 8000px;
    margin-left: 0;
